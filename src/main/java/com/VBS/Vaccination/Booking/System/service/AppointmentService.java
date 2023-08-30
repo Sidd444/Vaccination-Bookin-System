@@ -13,6 +13,8 @@ import com.VBS.Vaccination.Booking.System.repositories.AppointmentRepository;
 import com.VBS.Vaccination.Booking.System.repositories.DoctorRepository;
 import com.VBS.Vaccination.Booking.System.repositories.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.mail.SimpleMailMessage;
+//import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -30,8 +32,8 @@ public class AppointmentService {
     @Autowired
     AppointmentRepository appointmentRepository;
 
-    @Autowired
-    JavaMailSender javaMailSender;
+//    @Autowired
+//    JavaMailSender javaMailSender;
 
     public BookAppointmentResponseDto bookAppointment(BookAppointmentRequestDto bookAppointmentRequestDto) {
 
@@ -68,13 +70,13 @@ public class AppointmentService {
                 savedDoctor.getName() + ". Your vaccination center name is: " + center.getCenterName() + " Please reach at this address "+
                 center.getAddress() + " at this time: " + savedAppointment.getAppointmentDate()+" Dhanyawad!!!";
 
-        SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
-        simpleMailMessage.setFrom("acciojobspring@gmail.com");
-        simpleMailMessage.setTo(savedPerson.getEmailId());
-        simpleMailMessage.setSubject("Congrats!! Appointment Done!!");
-        simpleMailMessage.setText(text);
-
-        javaMailSender.send(simpleMailMessage);
+//        SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
+//        simpleMailMessage.setFrom("acciojobspring@gmail.com");
+//        simpleMailMessage.setTo(savedPerson.getEmailId());
+//        simpleMailMessage.setSubject("Congrats!! Appointment Done!!");
+//        simpleMailMessage.setText(text);
+//
+//        javaMailSender.send(simpleMailMessage);
 
         // prepare the response dto;
 

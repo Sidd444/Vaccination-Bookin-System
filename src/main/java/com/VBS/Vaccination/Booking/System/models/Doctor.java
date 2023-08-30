@@ -1,6 +1,6 @@
 package com.VBS.Vaccination.Booking.System.models;
 
-import com.example.vaccinationbookingsystem.Enum.Gender;
+import com.VBS.Vaccination.Booking.System.enums.Gender;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;

@@ -1,6 +1,6 @@
 package com.VBS.Vaccination.Booking.System.models;
 
-import com.example.vaccinationbookingsystem.Enum.DoseType;
+import com.VBS.Vaccination.Booking.System.enums.DoseType;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;

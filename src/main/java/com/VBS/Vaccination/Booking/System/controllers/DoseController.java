@@ -1,11 +1,9 @@
 package com.VBS.Vaccination.Booking.System.controllers;
 
-import com.example.vaccinationbookingsystem.Enum.DoseType;
-import com.example.vaccinationbookingsystem.Model.Dose;
-import com.example.vaccinationbookingsystem.dto.RequestDto.BookDose1RequestDto;
-import com.example.vaccinationbookingsystem.service.DoseService;
+import com.VBS.Vaccination.Booking.System.dtos.RequestDtos.BookDose1RequestDto;
+import com.VBS.Vaccination.Booking.System.models.Dose;
+import com.VBS.Vaccination.Booking.System.service.DoseService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.AutoConfigureOrder;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

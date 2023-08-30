@@ -1,9 +1,8 @@
 package com.VBS.Vaccination.Booking.System.controllers;
 
-import com.example.vaccinationbookingsystem.Model.Person;
-import com.example.vaccinationbookingsystem.dto.RequestDto.AddPersonRequestDto;
-import com.example.vaccinationbookingsystem.dto.ResponseDto.AddPersonResponseDto;
-import com.example.vaccinationbookingsystem.service.PersonService;
+import com.VBS.Vaccination.Booking.System.dtos.RequestDtos.AddPersonRequestDto;
+import com.VBS.Vaccination.Booking.System.dtos.ResponseDtos.AddPersonResponseDto;
+import com.VBS.Vaccination.Booking.System.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
